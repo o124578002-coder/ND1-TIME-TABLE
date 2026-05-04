@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ND1 Class Timetable</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f2ff;
+      padding: 20px;
+      color: #1a1a1a;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .header {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(13, 71, 161, 0.3);
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .day-card {
+      background-color: white;
+      border: 2px solid #1976d2;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .day-header {
+      background-color: #1976d2;
+      color: white;
+      padding: 14px 20px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .class-row {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid #e3f2fd;
+    }
+    .class-row:last-child {
+      border-bottom: none;
+    }
+    .time-badge {
+      background-color: #e3f2fd;
+      border: 1.5px solid #1976d2;
+      color: #0d47a1;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      min-width: 120px;
+      text-align: center;
+      margin-right: 16px;
+    }
+    .course-details {
+      font-size: 15px;
+      font-weight: 600;
+      color: #0d47a1;
+      flex: 1;
+    }
+    .no-class-card {
+      background-color: white;
+      border: 2px solid #1976d2;
+      border-radius: 12px;
+      padding: 8px;
+    }
+    .no-class-header {
+      background-color: #64b5f6;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .no-class-text {
+      text-align: center;
+      color: #1976d2;
+      font-weight: 700;
+      padding-bottom: 12px;
+      font-size: 16px;
+    }
+    @media (max-width: 480px) {
+      .class-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .time-badge {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>ND ONE  <b>(1)</b> COMPUTER<br>TIME TABLE</h1>
+    </div>
+
+    <!-- MONDAY -->
+    <div class="day-card">
+      <div class="day-header">MONDAY</div>
+      <div class="class-row">
+        <div class="time-badge">8:00 - 10:00</div>
+        <div class="course-details">COM 121 - CHARLES</div>
+      </div>
+      <div class="class-row">
+        <div class="time-badge">10:00 - 12:00</div>
+        <div class="course-details">COM 122 - PLANGNAN</div>
+      </div>
+      <div class="class-row">
+        <div class="time-badge">2:00 - 4:00</div>
+        <div class="course-details">GNSH 131 - MAKOSHI</div>
+      </div>
+    </div>
+
+    <!-- TUESDAY -->
+    <div class="day-card">
+      <div class="day-header">TUESDAY</div>
+      <div class="class-row">
+        <div class="time-badge">12:00 - 2:00</div>
+        <div class="course-details">STA 124 - MAKOSHI GNSH</div>
+      </div>
+    </div>
+
+    <!-- WEDNESDAY -->
+    <div class="no-class-card">
+      <div class="no-class-header">WEDNESDAY</div>
+      <div class="no-class-text">NO CLASS</div>
+    </div>
+    <br>
+    <!-- THURSDAY -->
+    <div class="day-card">
+      <div class="day-header">THURSDAY</div>
+      <div class="class-row">
+        <div class="time-badge">8:00 - 10:00</div>
+        <div class="course-details">GNS 228 - OGBOLE</div>
+      </div>
+      <div class="class-row">
+        <div class="time-badge">10:00 - 12:00</div>
+        <div class="course-details">COM 124 - PRECIOUS</div>
+      </div>
+    </div>
+
+    <!-- FRIDAY -->
+    <div class="day-card">
+      <div class="day-header">FRIDAY</div>
+      <div class="class-row">
+        <div class="time-badge">8:00 - 10:00</div>
+        <div class="course-details">COM 124 - KEFAS</div>
+      </div>
+      <div class="class-row">
+        <div class="time-badge">10:00 - 12:00</div>
+        <div class="course-details">COM 125 - PLANGNAN</div>
+      </div>
+      <div class="class-row">
+        <div class="time-badge">12:00 - 2:00</div>
+        <div class="course-details">COM 126 - BOKA</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
